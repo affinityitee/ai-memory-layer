@@ -59,7 +59,7 @@ The main chat view, showing a live conversation alongside the memory sidebar.
 
 #### 🗂️ Extracted Memories
 Facts automatically distilled and stored from natural conversation - no manual tagging required.
-<img width="329" height="935" alt="image" src="https://github.com/user-attachments/assets/091c3b28-8587-4d5a-ba81-01c9f165cc7f" />
+<img width="1915" height="987" alt="image" src="https://github.com/user-attachments/assets/521851f2-32f1-49c3-bc5f-3257d71afc82" />
 
 #### 🔬 RAG Retrieval in Action
 Raw API response from `/api/chat`, showing a retrieved memory and its cosine similarity score - proof the system retrieves by meaning, not keywords.

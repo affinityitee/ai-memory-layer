@@ -1,0 +1,100 @@
+.app {
+  flex: 1;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px 60px;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.chat-window {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 40px 0;
+}
+
+.bubble {
+  padding: 10px 14px;
+  border-radius: 12px;
+  max-width: 70%;
+  text-align: left;
+}
+
+.bubble.user {
+  align-self: flex-end;
+  background: #ffffff;
+  color: #3d1420; /* CHANGED from white — dark purple reads clearly on pale lavender */
+}
+
+.bubble.assistant {
+  align-self: flex-start;
+  background: var(--code-bg);
+  color: var(--text);
+}
+
+.input-row {
+  display: flex;
+  gap: 8px;
+  padding-top: 10px;
+}
+
+.input-row input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ca879b75;
+  background: var(--bg);
+  color: #3d1420;
+}
+
+.input-row input:focus {
+  border-color: var(--accent-border); /* CHANGED — uses your existing softer, semi-transparent variant instead of the solid accent */
+}
+
+.input-row button {
+  padding: 10px 18px;
+  border-radius: 8px;
+  border: none;
+  background: var(--accent);
+  color: white;
+  cursor: pointer;
+}
+
+
+.layout {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 300px;
+  border-right: 1px solid var(--border);
+  padding: 40px;
+  overflow-y: auto;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.sidebar h2 {
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.memory-item {
+  background: var(--code-bg);
+  padding: 10px 12px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: var(--text);
+}
+
+.empty {
+  font-size: 14px;
+  opacity: 0.6;
+}

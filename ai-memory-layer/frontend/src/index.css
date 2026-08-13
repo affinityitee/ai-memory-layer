@@ -1,0 +1,97 @@
+:root {
+  --text: #5c4a52;
+  --text-h: #c2185b;
+  --bg: #fdf6f8;
+  --border: #f0dce3;
+  --code-bg: #f7e9ee;
+  --accent: #e8829e;
+  --accent-bg: rgba(232, 130, 158, 0.12);
+  --accent-border: rgba(232, 130, 158, 0.4);
+  --shadow: rgba(0, 0, 0, 0.08) 0 10px 15px -3px, rgba(0, 0, 0, 0.04) 0 4px 6px -2px;
+  --sans: system-ui, 'Lato', Roboto, sans-serif;
+  --heading: system-ui, 'Lato', Roboto, sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+
+  font: 18px/145% var(--sans);
+  letter-spacing: 0.18px;
+  color-scheme: light dark;
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #d9c3cb;
+    --text-h: #f48fb1;
+    --bg: #1e1417;
+    --border: #3a252c;
+    --code-bg: #2a1a20;
+    --accent: #d16b8a;
+    --accent-bg: rgba(209, 107, 138, 0.15);
+    --accent-border: rgba(209, 107, 138, 0.4);
+    --social-bg: rgba(47, 48, 58, 0.5);
+    --shadow:
+      rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
+  }
+
+  #social .button-icon {
+    filter: invert(1) brightness(2);
+  }
+}
+
+body {
+  margin: 0;
+}
+
+#root {
+  width: 100%;        /* CHANGED from 1126px */
+  max-width: 100%;
+  margin: 0;           /* CHANGED — no longer needs centering */
+  text-align: center;
+  border-inline: none; /* CHANGED — no side borders for a full-width app */
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+h1,
+h2 {
+  font-family: var(--heading);
+  font-weight: 500;
+  color: var(--text-h);
+}
+
+h1 {
+  font-size: 56px;
+  letter-spacing: -1.68px;
+  margin: 32px 0;
+  @media (max-width: 1024px) {
+    font-size: 36px;
+    margin: 20px 0;
+  }
+}
+h2 {
+  font-size: 18px;
+  line-height: 118%;
+  letter-spacing: -0.24px;
+  margin: 0 0 8px;
+  @media (max-width: 1024px) {
+    font-size: 20px;
+  }
+}
+p {
+  margin: 0;
+}
+
+
+
+
